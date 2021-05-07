@@ -21,7 +21,8 @@ public class ChuanShanJia extends ThirdPartyCallback {
     private TTRewardVideoAd mTTRewardVideoAd;
     private boolean mRewardVerify;
 
-    public ChuanShanJia(Activity activity, String appId){
+    public ChuanShanJia(Activity activity, String appId, String className){
+        super(className);
         mActivity = activity;
 
         init(appId);
